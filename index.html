@@ -2,53 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marriage Biodata</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranay Nagargoje | Marriage Biodata</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff7f2;
+      color: #3a2a24;
+    }
+    header {
+      background: linear-gradient(135deg, #b76e79, #f3c5c5);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 6px 12px;
+      margin-left: 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    .lang-switch button.active {
+      background: #fff;
+      color: #b76e79;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.3rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      background: #eee;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 28px;
+      margin-bottom: 30px;
+      border-top: 4px solid #b76e79;
+    }
+    .card h2 {
+      text-align: center;
+      color: #b76e79;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px 30px;
+    }
+    .label {
+      font-weight: 600;
+      color: #6a3f3f;
+    }
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #b76e79;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+	
+	.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <h1 id="title">Marriage Biodata</h1>
-  <select id="languageSwitcher" onchange="switchLanguage()">
-    <option value="en">English</option>
-    <option value="mr">मराठी</option>
-  </select>
+  <div class="lang-switch">
+    <button class="active" onclick="setLang('en')">English</button>
+    <button onclick="setLang('mr')">मराठी</button>
+  </div>
+
+  <!-- Replace pranay.jpg with actual photo -->
+  <img src="pranay.jpeg" class="profile-photo" alt="Profile Photo">
+
+  <h1 data-en="Pranay Rajesh Nagargoje" data-mr="प्रणय राजेश नागरगोजे">
+    Pranay Rajesh Nagargoje
+  </h1>
+  <p data-en="Software Engineer | Pune" data-mr="सॉफ्टवेअर अभियंता | पुणे">
+    Software Engineer | Pune
+  </p>
 </header>
 
 <div class="container">
-  <div class="profile">
-    <img src="profile.jpg" alt="Profile Photo"/>
-    <h2 id="name"></h2>
+
+  <div class="card">
+    <h2 data-en="Personal Details" data-mr="वैयक्तिक माहिती">Personal Details</h2>
+    <div class="info-grid">
+      <div><span class="label">Date of Birth:</span> 02/04/1997</div>
+      <div><span class="label">Birth Place:</span> Amravati, Maharashtra</div>
+      <div><span class="label">Religion:</span> Hindu</div>
+      <div><span class="label">Caste:</span> Vanjari</div>
+      <div><span class="label">Zodiac sign:</span> Capricorn</div>
+      <div><span class="label">Height:</span> 5 ft 8 in</div>
+      <div><span class="label">Complexion:</span> Fair</div>
+      <div><span class="label">Blood Group:</span> A+</div>
+      <div><span class="label">Education:</span> B.E (Electronics & Telecommunication)</div>
+      <div><span class="label">Profession:</span> Software Engineer</div>
+      <div><span class="label">Company:</span> Pratiti Technologies Pvt. Ltd.</div>
+      <div><span class="label">Job Location:</span> Pune, Maharashtra</div>
+    </div>
   </div>
 
-  <section>
-    <h3 id="personalTitle"></h3>
-    <ul id="personalInfo"></ul>
-  </section>
-
-  <section>
-    <h3 id="familyTitle"></h3>
-    <ul id="familyInfo"></ul>
-  </section>
-
-  <section>
-    <h3 id="contactTitle"></h3>
-    <ul id="contactInfo"></ul>
-  </section>
-
-  <section>
-    <h3 id="galleryTitle"></h3>
-    <div class="gallery">
-      <p>Add your photos in the gallery folder</p>
+  <div class="card">
+    <h2 data-en="Family Details" data-mr="कौटुंबिक माहिती">Family Details</h2>
+    <div class="info-grid">
+      <div><span class="label">Father:</span> Late Rajesh Janrao Nagargoje</div>
+      <div><span class="label">Mother:</span> Late Chhaya Rajesh Nagargoje</div>
+      <div><span class="label">Brother:</span> Vivek Rajesh Nagargoje</div>
+      <div><span class="label">Uncle:</span> Late Sanjay Janrao Nagargoje (Police)</div>
+      <div><span class="label">Uncle:</span> Gajanan Janrao Nagargoje (Amravati) – 9730986449</div>
+      <div><span class="label">Maternal Uncle:</span> Prashant Dinkar Munde (Teacher) – 8788060285</div>
     </div>
-  </section>
+  </div>
+
+  <div class="card">
+	<h2 data-en="Photo Gallery" data-mr="फोटो गॅलरी">Photo Gallery</h2>
+	<div class="gallery">
+	<img src="photo1.jpeg" alt="Gallery Photo" />
+	  <img src="photo2.jpg" alt="Gallery Photo" />
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 data-en="Contact Details" data-mr="संपर्क माहिती">Contact Details</h2>
+    <div class="info-grid">
+      <div><span class="label">Address:</span> Rajendra Nagar, Gopal Nagar, Badnera Road, Amravati</div>
+      <div><span class="label">Mobile:</span> 8329956435</div>
+    </div>
+  </div>
+
 </div>
 
 <footer>
-  <p>© Marriage Biodata</p>
+  © 2025 Marriage Biodata | Pranay Nagargoje
 </footer>
 
-<script src="script.js"></script>
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+  document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+
 </body>
 </html>
