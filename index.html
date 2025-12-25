@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marriage Biodata</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <h1 id="title">Marriage Biodata</h1>
+  <select id="languageSwitcher" onchange="switchLanguage()">
+    <option value="en">English</option>
+    <option value="mr">मराठी</option>
+  </select>
+</header>
+
+<div class="container">
+  <div class="profile">
+    <img src="profile.jpg" alt="Profile Photo"/>
+    <h2 id="name"></h2>
+  </div>
+
+  <section>
+    <h3 id="personalTitle"></h3>
+    <ul id="personalInfo"></ul>
+  </section>
+
+  <section>
+    <h3 id="familyTitle"></h3>
+    <ul id="familyInfo"></ul>
+  </section>
+
+  <section>
+    <h3 id="contactTitle"></h3>
+    <ul id="contactInfo"></ul>
+  </section>
+
+  <section>
+    <h3 id="galleryTitle"></h3>
+    <div class="gallery">
+      <p>Add your photos in the gallery folder</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>© Marriage Biodata</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
