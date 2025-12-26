@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pranay Nagargoje | Marriage Biodata</title>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pranay Nagargoje | Marriage Biodata</title>
+ 
   <style>
     body {
       margin: 0;
@@ -28,7 +28,7 @@
       background: rgba(255,255,255,0.2);
       border: 1px solid #fff;
       color: #fff;
-      padding: 6px 12px;
+      padding: 6px 14px;
       margin-left: 5px;
       border-radius: 20px;
       cursor: pointer;
@@ -81,15 +81,7 @@
       font-weight: 600;
       color: #6a3f3f;
     }
-    footer {
-      text-align: center;
-      padding: 22px;
-      background: #b76e79;
-      color: #fff;
-      font-size: 0.9rem;
-    }
-	
-	.gallery {
+    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 15px;
@@ -101,98 +93,114 @@
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
+      transition: transform 0.3s ease;
     }
     .gallery img:hover {
       transform: scale(1.05);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
-  </style>
+    footer {
+      text-align: center;
+      padding: 22px;
+      background: #b76e79;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+</style>
 </head>
-
+ 
 <body>
-
+ 
 <header>
-  <div class="lang-switch">
-    <button class="active" onclick="setLang('en')">English</button>
-    <button onclick="setLang('mr')">मराठी</button>
-  </div>
-
-  <!-- Replace pranay.jpg with actual photo -->
+<div class="lang-switch">
+<button class="active" onclick="setLang('en')">English</button>
+<button onclick="setLang('mr')">मराठी</button>
+</div>
+ 
   <img src="pranay.jpeg" class="profile-photo" alt="Profile Photo">
-
+ 
   <h1 data-en="Pranay Rajesh Nagargoje" data-mr="प्रणय राजेश नागरगोजे">
     Pranay Rajesh Nagargoje
-  </h1>
-  <p data-en="Software Engineer | Pune" data-mr="सॉफ्टवेअर अभियंता | पुणे">
+</h1>
+<p data-en="Software Engineer | Pune" data-mr="सॉफ्टवेअर अभियंता | पुणे">
     Software Engineer | Pune
-  </p>
+</p>
 </header>
-
+ 
 <div class="container">
-
-  <div class="card">
-    <h2 data-en="Personal Details" data-mr="वैयक्तिक माहिती">Personal Details</h2>
-    <div class="info-grid">
-      <div><span class="label">Date of Birth:</span> 02/04/1997</div>
-      <div><span class="label">Birth Place:</span> Amravati, Maharashtra</div>
-      <div><span class="label">Religion:</span> Hindu</div>
-      <div><span class="label">Caste:</span> Vanjari</div>
-      <div><span class="label">Zodiac sign:</span> Capricorn</div>
-      <div><span class="label">Height:</span> 5 ft 8 in</div>
-      <div><span class="label">Complexion:</span> Fair</div>
-      <div><span class="label">Blood Group:</span> A+</div>
-      <div><span class="label">Education:</span> B.E (Electronics & Telecommunication)</div>
-      <div><span class="label">Profession:</span> Software Engineer</div>
-      <div><span class="label">Company:</span> Pratiti Technologies Pvt. Ltd.</div>
-      <div><span class="label">Job Location:</span> Pune, Maharashtra</div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 data-en="Family Details" data-mr="कौटुंबिक माहिती">Family Details</h2>
-    <div class="info-grid">
-      <div><span class="label">Father:</span> Late Rajesh Janrao Nagargoje</div>
-      <div><span class="label">Mother:</span> Late Chhaya Rajesh Nagargoje</div>
-      <div><span class="label">Brother:</span> Vivek Rajesh Nagargoje</div>
-      <div><span class="label">Uncle:</span> Late Sanjay Janrao Nagargoje (Police)</div>
-      <div><span class="label">Uncle:</span> Gajanan Janrao Nagargoje (Amravati) – 9730986449</div>
-      <div><span class="label">Maternal Uncle:</span> Prashant Dinkar Munde (Teacher) – 8788060285</div>
-    </div>
-  </div>
-
-  <div class="card">
-	<h2 data-en="Photo Gallery" data-mr="फोटो गॅलरी">Photo Gallery</h2>
-	<div class="gallery">
-	<img src="photo1.jpeg" alt="Gallery Photo" />
-	  <img src="photo2.jpg" alt="Gallery Photo" />
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 data-en="Contact Details" data-mr="संपर्क माहिती">Contact Details</h2>
-    <div class="info-grid">
-      <div><span class="label">Address:</span> Rajendra Nagar, Gopal Nagar, Badnera Road, Amravati</div>
-      <div><span class="label">Mobile:</span> 8329956435</div>
-    </div>
-  </div>
-
+ 
+  <!-- Personal Details -->
+<div class="card">
+<h2 data-en="Personal Details" data-mr="वैयक्तिक माहिती">Personal Details</h2>
+<div class="info-grid">
+<div><span class="label" data-en="Date of Birth:" data-mr="जन्मतारीख:">Date of Birth:</span> <span data-en="02/04/1997" data-mr="०२/०४/१९९७">02/04/1997</span></div>
+<div><span class="label" data-en="Birth Place:" data-mr="जन्मस्थान:">Birth Place:</span> <span data-en="Amravati, Maharashtra" data-mr="अमरावती, महाराष्ट्र">Amravati, Maharashtra</span></div>
+<div><span class="label" data-en="Religion:" data-mr="धर्म:">Religion:</span> <span data-en="Hindu" data-mr="हिंदू">Hindu</span></div>
+<div><span class="label" data-en="Caste:" data-mr="जात:">Caste:</span> <span data-en="Vanjari" data-mr="वंजारी">Vanjari</span></div>
+<div><span class="label" data-en="Zodiac Sign:" data-mr="रास:">Zodiac Sign:</span> <span data-en="Capricorn" data-mr="मकर">Capricorn</span></div>
+<div><span class="label" data-en="Height:" data-mr="उंची:">Height:</span> <span data-en="5 ft 8 inch" data-mr="५ फूट ८ इंच">5 ft 8 in</span></div>
+<div><span class="label" data-en="Complexion:" data-mr="वर्ण:">Complexion:</span> <span data-en="Fair" data-mr="गोरा">Fair</span></div>
+<div><span class="label" data-en="Blood Group:" data-mr="रक्तगट:">Blood Group:</span> <span data-en="A+" data-mr="ए+">A+</span></div>
+<div><span class="label" data-en="Education:" data-mr="शिक्षण:">Education:</span> <span data-en="B.E (ENTC)" data-mr="बी.ई. (इलेक्ट्रॉनिक्स आणि दूरसंचार)">B.E (ENTC)</span></div>
+<div><span class="label" data-en="Profession:" data-mr="व्यवसाय:">Profession:</span> <span data-en="Software Engineer" data-mr="सॉफ्टवेअर अभियंता">Software Engineer</span></div>
+<div><span class="label" data-en="Company:" data-mr="कंपनी:">Company:</span> <span data-en="Pratiti Technologies Pvt. Ltd." data-mr="प्रतीति टेक्नॉलॉजीज प्रा. लि.">Pratiti Technologies Pvt. Ltd.</span></div>
+<div><span class="label" data-en="Job Location:" data-mr="नोकरीचे ठिकाण:"> Job Location:</span> <span data-en="Pune, Maharashtra" data-mr="पुणे, महाराष्ट्र">Pune, Maharashtra</span></div>
 </div>
-
+</div>
+ 
+  <!-- Family Details -->
+<div class="card">
+<h2 data-en="Family Details" data-mr="कौटुंबिक माहिती">Family Details</h2>
+<div class="info-grid">
+<div><span class="label" data-en="Father:" data-mr="वडील:">Father:</span> <span data-en="Late Rajesh Janrao Nagargoje" data-mr="कै. राजेश जानराव नागरगोजे">Late Rajesh Janrao Nagargoje</span></div>
+<div><span class="label" data-en="Mother:" data-mr="आई:">Mother:</span> <span data-en="Late Chhaya Rajesh Nagargoje" data-mr="कै. छाया राजेश नागरगोजे">Late Chhaya Rajesh Nagargoje</span></div>
+<div><span class="label" data-en="Brother:" data-mr="भाऊ:">Brother:</span> <span data-en="Vivek Rajesh Nagargoje" data-mr="विवेक राजेश नागरगोजे">Vivek Rajesh Nagargoje</span></div>
+<div><span class="label" data-en="Uncle:" data-mr="काका:">Uncle:</span> <span data-en="Late Sanjay Janrao Nagargoje (Police)" data-mr="कै. संजय जानराव नागरगोजे (पोलीस)">Late Sanjay Janrao Nagargoje (Police)</span></div>
+<div><span class="label" data-en="Uncle:" data-mr="काका:">Uncle:</span> <span data-en="Gajanan Janrao Nagargoje - Amravati – 9730986449" data-mr="गजानन जानराव नागरगोजे - अमरावती - ९७३०९८६४४९">Gajanan Janrao Nagargoje – 9730986449</span></div>
+<div><span class="label" data-en="Maternal Uncle:" data-mr="मामा:">Maternal Uncle:</span> <span data-en="Prashant Dinkar Munde (Teacher) - Papal, Nandgaon khandeshwar, Amravati– 8788060285" data-mr="प्रशांत दिनकर मुंडे (शिक्षक) - पापळ, नांदगाव खंडेश्वर, अमरावती. - ८७८८०६०२८५">Prashant Dinkar Munde – 8788060285</span></div>
+</div>
+</div>
+ 
+  <!-- Photo Gallery -->
+<div class="card">
+<h2 data-en="Photo Gallery" data-mr="फोटो गॅलरी">Photo Gallery</h2>
+<div class="gallery">
+<img src="photo1.jpeg" alt="Photo">
+<img src="photo2.jpg" alt="Photo">
+</div>
+</div>
+ 
+  <!-- Contact Details -->
+<div class="card">
+<h2 data-en="Contact Details" data-mr="संपर्क माहिती">Contact Details</h2>
+<div class="info-grid">
+<div><span class="label" data-en="Address:" data-mr="पत्ता:">Address:</span> <span data-en="Rajendra Nagar, Gopal Nagar, Badnera Road, Amravati" data-mr="राजेंद्र नगर, गोपाल नगर, बडनेरा रोड, अमरावती, महाराष्ट्र.">Rajendra Nagar, Gopal Nagar, Badnera Road, Amravati</div>
+<div><span class="label" data-en="Mobile:" data-mr="मोबाईल:">Mobile:</span> <span data-en="8329956435" data-mr="८३२९९५६४३५">8329956435</div>
+</div>
+</div>
+ 
+</div>
+ 
 <footer>
   © 2025 Marriage Biodata | Pranay Nagargoje
 </footer>
-
+ 
 <script>
 function setLang(lang) {
   document.querySelectorAll('[data-en]').forEach(el => {
     el.textContent = el.getAttribute('data-' + lang);
   });
-  document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
+ 
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+ 
+  if (lang === 'en') {
+    document.querySelector('.lang-switch button:nth-child(1)').classList.add('active');
+  } else {
+    document.querySelector('.lang-switch button:nth-child(2)').classList.add('active');
+  }
 }
 </script>
-
+ 
 </body>
 </html>
